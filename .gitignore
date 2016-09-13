@@ -1,0 +1,13 @@
+/node_modules
+/dev
+.DS_Store
+/bower_components
+Icon\r
+Icon
+*.log
+/source/.tmp
+/app/public/resources
+/app/public/scripts
+/app/public/styles
+/app/public/*.html
+/app/public/vendors

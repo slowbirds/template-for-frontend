@@ -1,0 +1,83 @@
+//@import url('//fonts.googleapis.com/css?family=Roboto:400,500')
+
+// ------------------------------
+// Vars
+// ------------------------------
+ColorMainText = #333
+ColorSubText  = #555
+ColorAntiText = #fefefe
+ColorMainBackground = #fefefe
+ColorWeekText = #aaa
+ColorMainShadow = #aaa
+ColorActiveShadow = #ccc
+
+SizeMainFont = 92%
+
+// ------------------------------
+// Basics
+// ------------------------------
+
+body
+  background: ColorMainBackground
+  color: ColorMainText
+  font-sizeL SizeMainFont
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+
+h1
+  font-size: 2rem
+  margin: 0
+  padding: 1.2rem 0
+
+h2
+  font-size: 1.6rem
+  margin: 0 0 6px
+
+h3
+  font-size: 1.2rem
+
+
+
+// ------------------------------
+// Layouts
+// ------------------------------
+#container
+  margin: 0
+  padding: 0
+
+
+/*
+utility
+*/
+.spinner
+  width: 54px
+  height: 18px
+  margin: 20px auto
+  div
+    width: 18px
+    height: 18px
+    background-color: rgba(124,124,124,0.4)
+    filter: blur(1px)
+
+    border-radius: 100%
+    display: inline-block
+    animation: bouncedelay 1.4s infinite ease-in-out
+    animation-fill-mode: both
+  .bounce1
+    animation-delay: -0.32s
+  .bounce2
+    animation-delay: -0.16s
+  .bounce3
+    animation-delay: -0.08s
+
+.clearbox
+  &:after
+    content: ""
+    display: block
+    clear: both
+
+/* animation */
+@keyframes bouncedelay
+  0%, 80%, 100%
+    transform: scale(0.0)
+   40%
+    transform: scale(1.0)
